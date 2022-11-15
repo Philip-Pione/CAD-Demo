@@ -69,7 +69,7 @@ doneClick.addEventListener('click', (event) => {
         const parentTask = event.target.parentElement.parentElement.parentElement;
         const taskId = parseInt(parentTask.dataset.taskId);
         const task = taskManager.getTaskById(taskId);
-        task.status = "Done";
+        task.status = "On Scene";
         taskManager.render(task);
         taskManager.save();
     } else 
